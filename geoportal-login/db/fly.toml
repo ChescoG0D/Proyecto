@@ -1,0 +1,11 @@
+app = "dbgeoportal" 
+
+[build]
+  image = "flyio/postgres-flex"
+
+[[services]]
+  internal_port = 5432
+  protocol = "tcp"
+
+  [[services.ports]]
+    port = 5432
